@@ -140,3 +140,74 @@
 //       "Short circuting with || operator, it;s oposite of && operator"
 //     );
 // })();
+
+// ====== Fetch API With Async Await ()======
+// old way(.then)
+// (() => {
+//   const btnEl = document.querySelector(".btn");
+//   const clickHandler = () => {
+//     fetch("https://reqres.in/api/users")
+//       .then((response) => {
+//         if (!response.ok) {
+//           console.log("There is an error occured");
+//           return;
+//         }
+//         return response.json();
+//       })
+//       .then((data) => {
+//         console.log(data.data[4].email);
+//       })
+//       .catch((error) => {
+//         console.log(error);
+//       });
+//   };
+//   btnEl.addEventListener("click", clickHandler);
+// })();
+// New Way(async await)
+// (() => {
+//   const btnEl = document.querySelector(".btn");
+//   const clickHandler = async () => {
+//     try {
+//       const res = await fetch("https://reqres.in/api/users");
+//       const data = await res.json();
+//       if (!res.ok) {
+//         console.log(data.description);
+//         return;
+//       }
+//       console.log(data.data[3].email);
+//     } catch (error) {
+//       console.log(error);
+//     }
+//   };
+//   btnEl.addEventListener("click", clickHandler);
+// })();
+
+//Submit  data:
+(() => {
+  const btnEl2 = document.querySelector(".btn2");
+  const newUser = {
+    name: "Romeo",
+    job: "Developer",
+  };
+  const clickHandler = async () => {
+    try {
+      const res = await fetch("https://reqres.in/api/users", {
+        method: "POST",
+        headers: {
+          "Content-type": "application/json",
+        },
+        body: JSON.stringify(newUser),
+      });
+      const data = await res.json();
+      if (!res.ok) {
+        console.log(data.description);
+        return;
+      }
+      console.log(data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  btnEl2.addEventListener("click", clickHandler);
+})();
