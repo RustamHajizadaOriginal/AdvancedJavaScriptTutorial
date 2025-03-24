@@ -96,3 +96,12 @@
 //   const newNumbers = [...numbers1, ...numbers2];
 //   console.log(newNumbers);
 // })();
+
+// ====== Primitives vs Reference Values ()======
+// (() => {
+//   console.log(5 === 5);
+//   console.log("Hi" === "Hi");
+//   console.log(true === true);
+//   console.log([1, 2] === [1, 2]);
+//   console.log({ name: "Rustam" } === { name: "Rustam" });
+// })();
