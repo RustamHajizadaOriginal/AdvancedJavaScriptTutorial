@@ -105,3 +105,18 @@
 //   console.log([1, 2] === [1, 2]);
 //   console.log({ name: "Rustam" } === { name: "Rustam" });
 // })();
+
+// ====== Undefined and null ()======
+(() => {
+  let number;
+  console.log(number);
+  const data = {
+    city: "Prague",
+    street: "Main Street",
+    month: "June",
+  };
+  console.log(data.temperature);
+
+  let name = null;
+  console.log(name);
+})();
