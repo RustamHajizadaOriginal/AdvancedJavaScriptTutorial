@@ -44,31 +44,47 @@
 // })();
 
 // ====== FUNCTIONS ()======
-(() => {
-    callback functions
-    (doSomething) => {};
-    const calculatePrice = () => {};
-    methods
-    const arr = [5, 10, 15];
-    arr.push(20);
-    
-    console.log(arr);
-    
-    const obj = {
-      name: "Joe",
-      hobbies: ["reading", "running"],
-      calculateAge: function () {
-        return 30 + this.hobbies.length;
-      },
-    };
-    
-    console.log(obj.calculateAge());
-    
-    const calculatePrice = (sqMeters = 10000) => {
-      return 5000 + sqMeters;
-    };
-    const result = calculatePrice();
-    
-    console.log(result);
- })();
+// (() => {
+//     callback functions
+//     (doSomething) => {};
+//     const calculatePrice = () => {};
+//     methods
+//     const arr = [5, 10, 15];
+//     arr.push(20);
 
+//     console.log(arr);
+
+//     const obj = {
+//       name: "Joe",
+//       hobbies: ["reading", "running"],
+//       calculateAge: function () {
+//         return 30 + this.hobbies.length;
+//       },
+//     };
+
+//     console.log(obj.calculateAge());
+
+//     const calculatePrice = (sqMeters = 10000) => {
+//       return 5000 + sqMeters;
+//     };
+//     const result = calculatePrice();
+
+//     console.log(result);
+//  })();
+
+// ====== Destructuring ()======
+(() => {
+  const user = {
+    name: "Joe",
+    age: 32,
+    address: {
+      city: "New York",
+      street: "Broadway",
+    },
+  };
+  const numbers = [8, 5, 3, 10];
+  const [a, b, c] = numbers;
+  console.log(a, b, c);
+  const { name, age } = user;
+  console.log(name, age);
+})();
