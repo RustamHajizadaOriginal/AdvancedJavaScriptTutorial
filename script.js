@@ -107,16 +107,36 @@
 // })();
 
 // ====== Undefined and null ()======
-(() => {
-  let number;
-  console.log(number);
-  const data = {
-    city: "Prague",
-    street: "Main Street",
-    month: "June",
-  };
-  console.log(data.temperature);
+// (() => {
+//   let number;
+//   console.log(number);
+//   const data = {
+//     city: "Prague",
+//     street: "Main Street",
+//     month: "June",
+//   };
+//   console.log(data.temperature);
 
-  let name = null;
-  console.log(name);
-})();
+//   let name = null;
+//   console.log(name);
+// })();
+
+// ====== Short Circuting with && and || ()======
+// (() => {
+//   // short-circuiting with &&
+//   const price = 1000;
+//   if (price > 500 && price < 1500) {
+//     console.log("Price is between Acceptable range");
+//   } else {
+//     console.log("Price is not in the range");
+//   }
+//   price > 500 && console.log("Short circuting with && operator");
+
+//   // short-circuiting with ||
+//   const price2 = 500;
+
+//   price2 > 3000 ||
+//     console.log(
+//       "Short circuting with || operator, it;s oposite of && operator"
+//     );
+// })();
