@@ -73,18 +73,26 @@
 //  })();
 
 // ====== Destructuring ()======
-(() => {
-  const user = {
-    name: "Joe",
-    age: 32,
-    address: {
-      city: "New York",
-      street: "Broadway",
-    },
-  };
-  const numbers = [8, 5, 3, 10];
-  const [a, b, c] = numbers;
-  console.log(a, b, c);
-  const { name, age } = user;
-  console.log(name, age);
-})();
+// (() => {
+//   const user = {
+//     name: "Joe",
+//     age: 32,
+//     address: {
+//       city: "New York",
+//       street: "Broadway",
+//     },
+//   };
+//   const numbers = [8, 5, 3, 10];
+//   const [a, b, c] = numbers;
+//   console.log(a, b, c);
+//   const { name, age } = user;
+//   console.log(name, age);
+// })();
+
+// ====== Spread Operator ()======
+// (() => {
+//   const numbers1 = [9, 12, 53, 95];
+//   const numbers2 = [6, 67, 18, 95, 810];
+//   const newNumbers = [...numbers1, ...numbers2];
+//   console.log(newNumbers);
+// })();
