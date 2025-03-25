@@ -226,7 +226,39 @@
 // })();
 
 // ====== File Paths ()======
+// (() => {
+//   import calculatePrice from "../utilities.js";
+// })();
+
+// ====== Other Loops (While & for of) ()======
+//-- forEach()==-------
+// (() => {
+//   const numbers = [5, 10, 15];
+
+//   numbers.forEach((numbers) => {
+//     console.log(numbers);
+//   });
+// })();
+//-- for()=-----
+// (() => {
+//   for (let i = -2; i < 5; i++) {
+//     console.log(i);
+//   }
+// })();
+//-- while()=-----
+// (() => {
+//   let i = 0;
+//   while (i < 3) {
+//     console.log(
+//       "This Hello world will be shows at least 3 times, as each time it increments +1"
+//     );
+//     i++;
+//   }
+// })();
+// for of()
 (() => {
-  import calculatePrice from "../utilities.js";
+  const text = 'this is "for of" loop';
+  for (const character of text) {
+    console.log(character);
+  }
 })();
-(() => {})();
