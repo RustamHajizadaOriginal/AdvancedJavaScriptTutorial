@@ -265,18 +265,59 @@
 
 // ====== Switch Statement ()======
 // Switch
+// (() => {
+//   const browser = "DuckDuckGo";
+//   switch (browser) {
+//     case "DuckDuckGo":
+//       console.log("You are using DuckDuckGo");
+//       break;
+//     case "Opera":
+//       console.log("You are using Opera");
+//       break;
+//     case "Chrome":
+//       console.log("You are using Chrome");
+//       break;
+//   }
+// })();
+
+// ====== Window Object()======
 (() => {
-  const browser = "DuckDuckGo";
-  switch (browser) {
-    case "DuckDuckGo":
-      console.log("You are using DuckDuckGo");
-      break;
-    case "Opera":
-      console.log("You are using Opera");
-      break;
-    case "Chrome":
-      console.log("You are using Chrome");
-      break;
-  }
+  window.document;
+  console.log(window.document);
 })();
+
+// ====== ()======
+(() => {})();
+
+// ====== ()======
+(() => {})();
+
+// ====== ()======
+(() => {})();
+
+// ====== ()======
+(() => {})();
+
+// ====== ()======
+(() => {})();
+
+// ====== ()======
+(() => {})();
+
+// ====== ()======
+(() => {})();
+
+// ====== ()======
+(() => {})();
+
+// ====== ()======
+(() => {})();
+
+// ====== ()======
+(() => {})();
+
+// ====== ()======
+(() => {})();
+
+// ====== ()======
 (() => {})();
