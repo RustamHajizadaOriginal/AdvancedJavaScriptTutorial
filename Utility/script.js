@@ -256,9 +256,27 @@
 //   }
 // })();
 // for of()
+// (() => {
+//   const text = 'this is "for of" loop';
+//   for (const character of text) {
+//     console.log(character);
+//   }
+// })();
+
+// ====== Switch Statement ()======
+// Switch
 (() => {
-  const text = 'this is "for of" loop';
-  for (const character of text) {
-    console.log(character);
+  const browser = "DuckDuckGo";
+  switch (browser) {
+    case "DuckDuckGo":
+      console.log("You are using DuckDuckGo");
+      break;
+    case "Opera":
+      console.log("You are using Opera");
+      break;
+    case "Chrome":
+      console.log("You are using Chrome");
+      break;
   }
 })();
+(() => {})();
