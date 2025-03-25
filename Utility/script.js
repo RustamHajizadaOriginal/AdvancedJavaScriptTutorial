@@ -287,18 +287,25 @@
 // })();
 
 // ====== Match()======
-(() => {
-  Math.floor(5.95);
-  console.log(Math.floor(5.025));
-  console.log(Math.ceil(5.025));
-  const RandomNumber = Math.random() * 1000;
-  console.log(RandomNumber);
-})();
+// (() => {
+//   Math.floor(5.95);
+//   console.log(Math.floor(5.025));
+//   console.log(Math.ceil(5.025));
+//   const RandomNumber = Math.random() * 1000;
+//   console.log(RandomNumber);
+// })();
 
-// ====== ()======
-(() => {})();
+// ====== DATE ()======
+// (() => {
+//   const date = new Date(2050, 11, 26);
+//   console.log(date);
+//   console.log(date.getFullYear());
+//   console.log(date.getMonth());
+//   date.setFullYear(2027);
+//   console.log(date);
+// })();
 
-// ====== ()======
+// ====== OOP(Object Oriented Programming) Programming in JavaScript ()======
 (() => {})();
 
 // ====== ()======
