@@ -281,13 +281,19 @@
 // })();
 
 // ====== Window Object()======
-(() => {
-  window.document;
-  console.log(window.document);
-})();
+// (() => {
+//   window.document;
+//   console.log(window.document);
+// })();
 
-// ====== ()======
-(() => {})();
+// ====== Match()======
+(() => {
+  Math.floor(5.95);
+  console.log(Math.floor(5.025));
+  console.log(Math.ceil(5.025));
+  const RandomNumber = Math.random() * 1000;
+  console.log(RandomNumber);
+})();
 
 // ====== ()======
 (() => {})();
