@@ -357,102 +357,88 @@
 
 // ====== Promises ()======
 // Create a promise
+// (() => {
+//   // const p = new Promise();
+//   // const p2 = new Promise();
+//   // const p3 = new Promise();
+//   // const pNew = new Promise((resolve, reject) => {
+//   //   const numberOfCustomers = 6;
+//   //   if (numberOfCustomers > 5) {
+//   //     resolve("Success"); // fulfilled with value
+//   //   } else {
+//   //     reject("Failure"); //failure with reason
+//   //   }
+//   // });
+//   // Consume a promise with .then() and .catch()
+//   // pNew
+//   //   .then((value) => {
+//   //     console.log(value);
+//   //   })
+//   //   .catch((reason) => {
+//   //     console.log(reason);
+//   //   });
+//   // Consume a promise with async/await & try/catch
+//   // const checkResults = async () => {
+//   //   try {
+//   //     const value = await pNew;
+//   //     console.log(value);
+//   //   } catch (reason) {
+//   //     console.log(reason);
+//   //   }
+//   // };
+//   // checkResults();
+//   // Why &Where use promises in web development
+//   // const a = 1;
+//   // const b = 2;
+//   // const c = 3;
+
+//   // Fetcj API (mpst common example of promises)
+//   // fetch("https://reqres.in/api/users")
+//   //   .then((response) => {
+//   //     if (!response.ok) {
+//   //       console.log("Something went wrong");
+//   //       return;
+//   //     }
+//   //     return response.json();
+//   //     // console.log(response);
+//   //   })
+//   //   .then((data) => {
+//   //     for (let i = 0; i < 5; i++) {
+//   //       console.log(data.data[i].first_name, data.data[i].email);
+//   //     }
+//   //   })
+//   //   .catch((error) => {
+//   //     console.log("Error", error);
+//   //   });
+
+//   // Promise.all
+//   // Promise.all([
+//   //   fetchPhotoPromise,
+//   //   fetchCommentsPromise
+//   // ]).then(value => {
+//   //   // Render post
+//   // })
+//   // =-Promise.any
+//   promise
+//     .any([fetchPhotoServer1Promise, fetchPhotoServer2Promise])
+//     .then((value) => {
+//       // do something;
+//     });
+// })();
+
+// ====== Event Loop(How JavaScript Works under the  hood) ()======
+
 (() => {
-  // const p = new Promise();
-  // const p2 = new Promise();
-  // const p3 = new Promise();
-  // const pNew = new Promise((resolve, reject) => {
-  //   const numberOfCustomers = 6;
-  //   if (numberOfCustomers > 5) {
-  //     resolve("Success"); // fulfilled with value
-  //   } else {
-  //     reject("Failure"); //failure with reason
-  //   }
-  // });
-  // Consume a promise with .then() and .catch()
-  // pNew
-  //   .then((value) => {
-  //     console.log(value);
-  //   })
-  //   .catch((reason) => {
-  //     console.log(reason);
-  //   });
-  // Consume a promise with async/await & try/catch
-  // const checkResults = async () => {
-  //   try {
-  //     const value = await pNew;
-  //     console.log(value);
-  //   } catch (reason) {
-  //     console.log(reason);
-  //   }
-  // };
-  // checkResults();
-  // Why &Where use promises in web development
-  // const a = 1;
-  // const b = 2;
-  // const c = 3;
-
-  // Fetcj API (mpst common example of promises)
-  // fetch("https://reqres.in/api/users")
-  //   .then((response) => {
-  //     if (!response.ok) {
-  //       console.log("Something went wrong");
-  //       return;
-  //     }
-  //     return response.json();
-  //     // console.log(response);
-  //   })
-  //   .then((data) => {
-  //     for (let i = 0; i < 5; i++) {
-  //       console.log(data.data[i].first_name, data.data[i].email);
-  //     }
-  //   })
-  //   .catch((error) => {
-  //     console.log("Error", error);
-  //   });
-
-  // Promise.all
-  // Promise.all([
-  //   fetchPhotoPromise,
-  //   fetchCommentsPromise
-  // ]).then(value => {
-  //   // Render post
-  // })
-  // =-Promise.any
-  promise
-    .any([fetchPhotoServer1Promise, fetchPhotoServer2Promise])
-    .then((value) => {
-      // do something;
-    });
+  function greeting() {
+    console.log("Hello");
+    setTimeout(time, 2000);
+    ok();
+  }
+  function ok() {
+    console.log("Hi, who are you?");
+  }
+  function time() {
+    console.log("I am Joe, Nice to meet you");
+  }
+  greeting();
 })();
-//
-//
-//
-//
-//
-
-(() => {})();
-
-// ====== ()======
-(() => {})();
-
-// ====== ()======
-(() => {})();
-
-// ====== ()======
-(() => {})();
-
-// ====== ()======
-(() => {})();
-
-// ====== ()======
-(() => {})();
-
-// ====== ()======
-(() => {})();
-
-// ====== ()======
-(() => {})();
-
-// ====== ()======
-(() => {})();
