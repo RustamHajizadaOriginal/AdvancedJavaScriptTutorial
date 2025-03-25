@@ -306,7 +306,54 @@
 // })();
 
 // ====== OOP(Object Oriented Programming) Programming in JavaScript ()======
-(() => {})();
+(() => {
+  // const apartment1 = {
+  //   sqMeters: 24,
+  //   numberOfRooms: 1,
+  //   isBig: function () {
+  //     return this.sqMeters > 65 ? true : false;
+  //   },
+  //   calculatePrice: function () {
+  //     return this.sqMeters * numberOfRooms;
+  //   },
+  // };
+
+  // const apartment2 = {
+  //   sqMeters: 73,
+  //   numberOfRooms: 3,
+  //   isBig: function () {
+  //     return this.sqMeters > 65 ? true : false;
+  //   },
+  //   calculatePrice: function () {
+  //     return this.sqMeters * numberOfRooms;
+  //   },
+  // };
+
+  // console.log(apartment1.sqMeters);
+  // console.log(apartment1.numberOfRooms);
+  // console.log(apartment1.isBig());
+  class Apartment {
+    constructor(sqMeters, purchasePriceInCzk) {
+      this.sqMeters = sqMeters;
+      this.purchasePriceInCzk = purchasePriceInCzk;
+    }
+    PricePerSqM() {
+      return this.purchasePriceInCzk / this.sqMeters;
+    }
+    calculatePrice() {
+      return this.sqMeters * this.purchasePriceInCzk;
+    }
+  }
+  const apartment1 = new Apartment(24, 3350000);
+  const apartment2 = new Apartment(68, 2050000);
+
+  console.log(
+    apartment1,
+    apartment1.PricePerSqM(),
+    apartment2,
+    apartment2.PricePerSqM()
+  );
+})();
 
 // ====== ()======
 (() => {})();
