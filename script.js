@@ -181,33 +181,49 @@
 //   };
 //   btnEl.addEventListener("click", clickHandler);
 // })();
-
 //Submit  data:
-(() => {
-  const btnEl2 = document.querySelector(".btn2");
-  const newUser = {
-    name: "Romeo",
-    job: "Developer",
-  };
-  const clickHandler = async () => {
-    try {
-      const res = await fetch("https://reqres.in/api/users", {
-        method: "POST",
-        headers: {
-          "Content-type": "application/json",
-        },
-        body: JSON.stringify(newUser),
-      });
-      const data = await res.json();
-      if (!res.ok) {
-        console.log(data.description);
-        return;
-      }
-      console.log(data);
-    } catch (error) {
-      console.log(error);
-    }
-  };
+// (() => {
+//   const btnEl2 = document.querySelector(".btn2");
+//   const newUser = {
+//     name: "Romeo",
+//     job: "Developer",
+//   };
+//   const clickHandler = async () => {
+//     try {
+//       const res = await fetch("https://reqres.in/api/users", {
+//         method: "POST",
+//         headers: {
+//           "Content-type": "application/json",
+//         },
+//         body: JSON.stringify(newUser),
+//       });
+//       const data = await res.json();
+//       if (!res.ok) {
+//         console.log(data.description);
+//         return;
+//       }
+//       console.log(data);
+//     } catch (error) {
+//       console.log(error);
+//     }
+//   };
 
-  btnEl2.addEventListener("click", clickHandler);
-})();
+//   btnEl2.addEventListener("click", clickHandler);
+// })();
+
+// ====== ES Modules(import / export) ()======
+// (() => {
+//   import { convertCurrency, BASE_API_URL } from "./utilities.js";
+//   import whatEverIwantCanWriteInHere from "./utilities.js";
+// })();
+// (() => {
+//   import convertCurrency, { BASE_API_URL } from "./utilities.js";
+
+//   const euroAmount = convertCurrency(100);
+//   console.log(euroAmount);
+
+//   // fetch(`${BASE_API_URL}/books/4`);
+// })();
+
+(() => {})();
+(() => {})();
