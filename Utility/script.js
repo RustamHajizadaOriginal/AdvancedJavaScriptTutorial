@@ -393,22 +393,36 @@
   // const c = 3;
 
   // Fetcj API (mpst common example of promises)
-  fetch("https://reqres.in/api/users")
-    .then((response) => {
-      if (!response.ok) {
-        console.log("Something went wrong");
-        return;
-      }
-      return response.json();
-      // console.log(response);
-    })
-    .then((data) => {
-      for (let i = 0; i < 5; i++) {
-        console.log(data.data[i].first_name, data.data[i].email);
-      }
-    })
-    .catch((error) => {
-      console.log("Error", error);
+  // fetch("https://reqres.in/api/users")
+  //   .then((response) => {
+  //     if (!response.ok) {
+  //       console.log("Something went wrong");
+  //       return;
+  //     }
+  //     return response.json();
+  //     // console.log(response);
+  //   })
+  //   .then((data) => {
+  //     for (let i = 0; i < 5; i++) {
+  //       console.log(data.data[i].first_name, data.data[i].email);
+  //     }
+  //   })
+  //   .catch((error) => {
+  //     console.log("Error", error);
+  //   });
+
+  // Promise.all
+  // Promise.all([
+  //   fetchPhotoPromise,
+  //   fetchCommentsPromise
+  // ]).then(value => {
+  //   // Render post
+  // })
+  // =-Promise.any
+  promise
+    .any([fetchPhotoServer1Promise, fetchPhotoServer2Promise])
+    .then((value) => {
+      // do something;
     });
 })();
 //
